@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+        #a{
+            background-color: aliceblue;
+            height:900px;
+            width:800px;
+            margin-top: 100px;;
+        }
+
+
+    </style>
+    <script src="http://kit.fontawesome.com/fb5bc9141b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data" >{% csrf_token %}
+
+    <div id="a" class="container border border-muted ">
+        <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Company Name</label><br>
+                    <input type="text" class="form-control" name="company"  value="{{cn}}" readonly >
+                </div>
+            </div>
+
+        <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Job TItle</label><br>
+                    <input type="text" class="form-control" name="title" value="{{jt}}" readonly >
+                </div>
+            </div>
+
+
+        <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Full Name</label><br>
+                    <input type="text" class="form-control" name="fname">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Email</label><br>
+                    <input type="email" class="form-control" name="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Resume</label><br>
+                    <input type="file" class="form-control" name="resume">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Educational Qualification</label><br>
+                    <input type="text" class="form-control" name="education">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Experience</label><br>
+                    <input type="text" class="form-control" name="exp">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Address</label><br>
+                    <input type="text" class="form-control" name="address">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-3">
+                    <label class="Form-label">Phone</label><br>
+                    <input type="number" class="form-control" name="phone">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:150px;">Upload</button>
+    </div>
+</form>
+
+</body>
+</html>

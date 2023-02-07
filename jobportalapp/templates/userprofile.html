@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="http://kit.fontawesome.com/fb5bc9141b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>PHPJabbers.com | Free Job Agency Website Template</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+<body>
+    <header class="header-area header-sticky">
+        <div class="container-fluid bg-dark" >
+            <div class="row" >
+                    <nav class="main-nav">
+                        <a href="index.html" class="logo">Job Agency<em> Website</em></a>
+                        <ul class="nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="http://127.0.0.1:8000/jobportalapp/wish" class="active">Wishlist</a></li>
+                            <li><a href="http://127.0.0.1:8000/jobportalapp/logclass" class="active" >LOGOUT</a></li>
+                            <li><a href="contact.html" class="active">Contact</a></li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">USER PROFILE</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body" style="back-ground:black;color:white">
+                                    <ul>
+                                        <li><a href="" style="color:blue"><i class="fa-solid fa-house" style="color:white"></i>  Home</a></li>
+                                        <li><a href="http://127.0.0.1:8000/jobportalapp/userupload" style="color:blue"><i class="fa-solid fa-user-pen"></i> Add Profile Details</a></li>
+                                        <li><a href="" style="color:blue"><i class="fa-solid fa-arrow-right-from-bracket"></i>  Logout</a></li>
+                                    </ul>
+                                    </div>
+                            </div>
+                            </li>
+
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </header><br><br><br><br><br><br>
+
+    <div class="container-fluid bg-dark mt-5"><br>
+        <center>
+                <ul>
+                    <li><a href="http://127.0.0.1:8000/jobportalapp/applieddisplay/" class="btn btn-primary" style="width:200px;">View Vacancies</a></li><br>
+                    <li><a href="http://127.0.0.1:8000/jobportalapp/userapplied/" class="btn btn-primary" style="width:200px;">Applied Job</a></li><br>
+                    <li><a href="" class="btn btn-primary" style="width:200px;">Check Status</a></li><br>
+                </ul>
+        </center>
+    </div><br><br><br><br><br><br><br><br><br><br>
+
+
+{% include 'footer.html' %}
+</body>
+</html>
